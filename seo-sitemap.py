@@ -7,8 +7,16 @@ Aligns with: Python automation, Web development, Document digitization best prac
 
 import os
 import re
+import sys
 from datetime import datetime
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
+
+# Make console output safe on terminals that default to a legacy code page
+# (e.g. Windows cp1252), which would otherwise crash on non-ASCII characters.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except (AttributeError, ValueError):
+    pass
 
 # Configuration
 SITE_URL = "https://tos-algaeremoval.example.com"
@@ -103,12 +111,20 @@ def extract_metadata(filepath):
 
 def generate_sitemap(pages, site_url):
     """Generate sitemap.xml content."""
-    lines = ['<?xml version="1.0" encoding="UTF-8"?>', "<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">"]
+    lastmod = datetime.now().strftime("%Y-%m-%d")
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
 
     for page in pages:
         url = urljoin(site_url, page["path"])
-        line = f'  <url><loc>{url}</loc><priority>{page["priority"]}</priority><changefreq>{page["changefreq"]}</changefreq></url>'
-        lines.append(line)
+        lines.append("  <url>")
+        lines.append(f"    <loc>{url}</loc>")
+        lines.append(f"    <lastmod>{lastmod}</lastmod>")
+        lines.append(f"    <changefreq>{page['changefreq']}</changefreq>")
+        lines.append(f"    <priority>{page['priority']}</priority>")
+        lines.append("  </url>")
 
     lines.append("</urlset>")
     return "\n".join(lines)
