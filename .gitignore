@@ -1,0 +1,42 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Generated output (regenerate with: python seo-sitemap.py) ----
+# Uncomment the following if you prefer not to version generated SEO files:
+# sitemap.xml
+# robots.txt
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+npm-debug.log*
+
+# ---- Archives (prefer source over committed binaries) ----
+# Note: existing archives are tracked intentionally for now; new ones are ignored.
+*.zip
+*.rar
+*.7z
