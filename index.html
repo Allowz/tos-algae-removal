@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOS Algae Removal Services — Clean. Professional. Reliable. Protective.</title>
+<meta name="description" content="Professional algae, mold and surface-growth removal and treatment for homes and businesses. We remove. We protect. You enjoy a clean, healthy space.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="model-theme">
+
+<!-- WebGL backdrop -->
+<canvas id="webgl" aria-hidden="true" role="presentation"></canvas>
+<div class="veil" aria-hidden="true"></div>
+
+<!-- Scroll progress + chapter indicator -->
+<div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
+<div class="chapter-dots" id="chapterDots" aria-hidden="true">
+  <span data-chapter="0" class="is-active"></span>
+  <span data-chapter="1"></span>
+  <span data-chapter="2"></span>
+  <span data-chapter="3"></span>
+</div>
+
+<!-- Floating nav -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="TOS Algae Removal Services — home">
+      <span class="brand-mark">TOS</span>
+      <span class="brand-sub">ALGAE REMOVAL</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#problem">Services</a>
+      <a href="#process">Process</a>
+      <a href="#why">Why TOS</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-sm btn-primary">Get Assessment</a>
+      <a href="tel:08063288510" class="nav-call" aria-label="Call TOS on 08063288510">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="#problem">Services</a>
+    <a href="#process">Process</a>
+    <a href="#why">Why TOS</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="mobile-menu-cta">
+    <a href="#contact" class="btn btn-primary btn-block">Get a Free Assessment</a>
+    <a href="tel:08063288510" class="btn btn-ghost btn-block">Call 08063288510</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-brand">
+        <h1 class="hero-logo">TOS <span class="hero-logo-sub">Algae Removal<br>Services</span></h1>
+        <p class="eyebrow">ALGAE REMOVAL · SURFACE TREATMENT · CLEANING · PREVENTION</p>
+      </div>
+      <h2 class="hero-title">
+        <span class="line">BRING YOUR</span>
+        <span class="line accent">SPACE BACK</span>
+        <span class="line">TO CLEAN.</span>
+      </h2>
+      <p class="hero-sub">
+        Algae grows fast. Your property deserves better. Algae, mold and surface growth can quickly turn
+        clean spaces into neglected-looking environments. TOS removes the growth, treats affected surfaces
+        and helps keep them cleaner for longer.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get a Free Assessment
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="tel:08063288510" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 08063288510
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- 01 THE PROBLEM -->
+  <section class="chapter" id="problem">
+    <div class="chapter-head">
+      <span class="chap-num">01</span>
+      <span class="chap-tag">THE PROBLEM</span>
+    </div>
+    <h2 class="chap-title">WHEN ALGAE TAKES OVER, <em>CLEAN WATER</em> STOPS LOOKING CLEAN.</h2>
+    <div class="apa-grid" aria-hidden="true">
+      <div class="apa-cell"><span class="apa-label">ALGAE SURFACE</span></div>
+      <div class="apa-cell"><span class="apa-label">MURKY WATER</span></div>
+      <div class="apa-cell"><span class="apa-label">AFFECTED WALLS</span></div>
+    </div>
+  </section>
+
+  <!-- 02 WHY IT HAPPENS -->
+  <section class="chapter chap-causes" id="why">
+    <div class="chapter-head">
+      <span class="chap-num">02</span>
+      <span class="chap-tag">WHY IT HAPPENS</span>
+    </div>
+    <h2 class="chap-title">ALGAE DOESN'T NEED MUCH <em>TO TAKE OVER.</em></h2>
+    <ul class="cause-list">
+      <li class="cause" data-num="A"><h3>NUTRIENT BUILD-UP</h3><p>Excess nutrients can fuel unwanted algae growth.</p></li>
+      <li class="cause" data-num="B"><h3>STAGNANT WATER</h3><p>Poor circulation creates conditions where algae can thrive.</p></li>
+      <li class="cause" data-num="C"><h3>HEAT + SUNLIGHT</h3><p>Warm, sun-exposed environments can accelerate growth.</p></li>
+      <li class="cause" data-num="D"><h3>NEGLECTED SURFACES</h3><p>Moisture and organic buildup can allow algae and mold to spread.</p></li>
+    </ul>
+  </section>
+
+  <!-- 03 THE TOS SOLUTION -->
+  <section class="chapter chapter-solution">
+    <div class="chapter-head">
+      <span class="chap-num">03</span>
+      <span class="chap-tag">THE TOS SOLUTION</span>
+    </div>
+    <h2 class="chap-title">REMOVE IT. <em>TREAT IT.</em> PREVENT IT.</h2>
+    <div class="service-grid">
+      <article class="service glass">
+        <span class="service-num">01</span>
+        <h3>ALGAE &amp; MOLD REMOVAL</h3>
+        <p>Effective removal of algae, mold and fungal growth.</p>
+      </article>
+      <article class="service glass">
+        <span class="service-num">02</span>
+        <h3>SURFACE TREATMENT</h3>
+        <p>Application of anti-algae solutions for longer-lasting protection.</p>
+      </article>
+      <article class="service glass">
+        <span class="service-num">03</span>
+        <h3>WALL &amp; ROOF CLEANING</h3>
+        <p>Thorough cleaning of walls, roofs, floors and other affected surfaces.</p>
+      </article>
+      <article class="service glass">
+        <span class="service-num">04</span>
+        <h3>PREVENTION &amp; MAINTENANCE</h3>
+        <p>Expert maintenance solutions designed to help prevent future growth.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="chapter" id="process">
+    <div class="chapter-head">
+      <span class="chap-num">04</span>
+      <span class="chap-tag">THE TOS PROCESS</span>
+    </div>
+    <h2 class="chap-title">A CLEAR PATH TO <em>CLEAN.</em></h2>
+    <div class="process">
+      <div class="p-step"><span class="p-num">01</span><h3>ASSESS</h3><p>We inspect the affected area and understand the problem.</p></div>
+      <div class="p-step"><span class="p-num">02</span><h3>REMOVE</h3><p>We remove algae, mold and unwanted surface growth.</p></div>
+      <div class="p-step"><span class="p-num">03</span><h3>TREAT</h3><p>We treat the affected surface using appropriate solutions.</p></div>
+      <div class="p-step"><span class="p-num">04</span><h3>PROTECT</h3><p>We help maintain a cleaner environment and reduce future growth.</p></div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="chapter chapter-ba">
+    <div class="chapter-head">
+      <span class="chap-num">05</span>
+      <span class="chap-tag">THE TOS DEMONSTRATION</span>
+    </div>
+    <h2 class="chap-title">SEE THE <em>DIFFERENCE.</em></h2>
+    <div class="ba" id="ba">
+      <div class="ba-frame">
+        <div class="ba-after" style="background:var(--royal-blue);"></div>
+        <div class="ba-before" id="baBefore" style="background:#17331f;">
+          <span class="ba-badge before">BEFORE</span>
+        </div>
+        <span class="ba-badge ba-badge-live" style="position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.85);color:var(--deep-blue);">AFTER</span>
+        <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Drag to compare before and after">
+      </div>
+      <p class="ba-hint">Drag to reveal the treated surface.</p>
+    </div>
+  </section>
+
+  <!-- 06 THE RESULT -->
+  <section class="chapter chapter-result">
+    <div class="chapter-head">
+      <span class="chap-num">06</span>
+      <span class="chap-tag">THE RESULT</span>
+    </div>
+    <h2 class="chap-title">CLEARER WATER. <em>CLEANER SPACES.</em></h2>
+    <p class="chap-copy">Say goodbye to unwanted algae growth and hello to a cleaner, healthier-looking environment.</p>
+    <p class="result-promise">WE REMOVE. WE PROTECT. YOU ENJOY A CLEAN, HEALTHY SPACE.</p>
+  </section>
+
+  <!-- TRUST -->
+  <section class="chapter chapter-trust">
+    <div class="chapter-head">
+      <span class="chap-num">07</span>
+      <span class="chap-tag">WHY TOS</span>
+    </div>
+    <div class="trust-grid">
+      <div class="trust"><h3>PROFESSIONAL</h3><p>Professional service with attention to the details that matter.</p></div>
+      <div class="trust"><h3>RELIABLE</h3><p>A dependable approach from assessment through treatment.</p></div>
+      <div class="trust"><h3>AFFORDABLE</h3><p>Practical solutions designed around the job at hand.</p></div>
+      <div class="trust"><h3>SAFE SOLUTIONS</h3><p>Solutions designed for homes and businesses.</p></div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="chapter chapter-final">
+    <h2 class="final-title">READY TO SAY GOODBYE TO ALGAE?</h2>
+    <p class="final-sub">Let's get your space clean again.</p>
+    <a href="tel:08063288510" class="final-phone">08063288510</a>
+    <div class="final-cta">
+      <a href="#contact" class="btn btn-primary btn-lg">Get a Free Assessment</a>
+      <a href="https://wa.me/2348063288510" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">WhatsApp TOS</a>
+    </div>
+    <p class="final-promise">Clean Spaces. Healthy Living.<br><span class="final-promise-alt">That's our promise!</span></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="chapter chapter-contact" id="contact">
+    <div class="chapter-head">
+      <span class="chap-num">08</span>
+      <span class="chap-tag">CONTACT</span>
+    </div>
+    <h2 class="chap-title">GET YOUR FREE <em>ASSESSMENT.</em></h2>
+
+    <form class="contact-form glass" id="contactForm" novalidate>
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input type="text" id="f-name" name="name" autocomplete="name" required>
+        <small class="err"></small>
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone Number</label>
+        <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+        <small class="err"></small>
+      </div>
+      <div class="field">
+        <label for="f-service">Service Needed</label>
+        <select id="f-service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option>Algae &amp; Mold Removal</option>
+          <option>Surface Treatment</option>
+          <option>Wall &amp; Roof Cleaning</option>
+          <option>Prevention &amp; Maintenance</option>
+          <option>Pool / Pond / Water Area</option>
+          <option>Other</option>
+        </select>
+        <small class="err"></small>
+      </div>
+      <div class="field">
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="4"></textarea>
+        <small class="err"></small>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block btn-lg">Request Free Assessment</button>
+      <p class="form-note">Prefer to talk now? Call <a href="tel:08063288510">08063288510</a> or <a href="https://wa.me/2348063288510" target="_blank" rel="noopener">chat on WhatsApp</a>.</p>
+      <div class="form-success" id="formSuccess" role="status">
+        <span class="success-tick">✓</span>
+        <p>Request received. TOS will reach out shortly.</p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="brand-mark">TOS</span>
+      <p class="footer-tag">ALGAE REMOVAL SERVICES</p>
+      <p class="footer-promise">We remove. We protect. You enjoy a clean, healthy space.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#contact">Algae &amp; Mold Removal</a>
+      <a href="#contact">Surface Treatment</a>
+      <a href="#contact">Wall &amp; Roof Cleaning</a>
+      <a href="#contact">Prevention &amp; Maintenance</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a class="footer-phone" href="tel:08063288510">08063288510</a>
+      <a class="footer-cta" href="#contact">Call Us</a>
+      <a class="footer-cta" href="https://wa.me/2348063288510" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> TOS Algae Removal Services. Clean Spaces. Healthy Living.</span>
+    <span class="footer-phrase">That's our promise!</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp/call -->
+<div class="float-cta">
+  <a href="https://wa.me/2348063288510" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="WhatsApp TOS">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.4 6.4 0 0 1-2.1-1.3 7.7 7.7 0 0 1-1.4-1.8c-.1-.3 0-.4.1-.5s.3-.3.4-.5.2-.3.3-.5a.6.6 0 0 0 0-.5c-.1-.2-.6-1.5-.9-2s-.5-.5-.6-.5h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.5 11 11 0 0 0 4.2 3.7c.6.3 1 .4 1.4.5a3.2 3.2 0 0 0 1.5.1 2.2 2.2 0 0 0 1.5-1 1.9 1.9 0 0 0 .1-1.1c0-.1-.1-.1-.4-.2z"/></svg>
+  </a>
+  <a href="tel:08063288510" class="float-btn float-call" aria-label="Call TOS">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
